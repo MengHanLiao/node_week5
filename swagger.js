@@ -7,6 +7,15 @@ const doc = {
   },
   host: 'localhost:3000',
   schemes: ['http','https'],
+  definitions: {
+    getUsers: {
+      status: "success",
+      data: [{
+        _id: "UserId",
+        nickname: "userNickname"
+      }]
+    }
+  }
 }
 
 const swaggerFile = "./swagger-output.json";
